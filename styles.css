@@ -13,11 +13,25 @@
 }
 
 html, body {
-    /* background-color: lightgrey; */
+    background-color: var(--primary-light);
     height: 100%;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.leaf {
+    margin-top:20px;
+    width: 150px;
+    height: 170px;
+}
+
+.body {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +39,12 @@ body {
     color: var(--primary-dark);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    padding: 20px;
     /* footer support */
+    flex-grow: 1;
     margin-bottom: 100px;
+    /* height:100%; */
+    align-self: stretch;
   }
 
 .input {
@@ -84,6 +102,21 @@ background-color: gold;
     transform: scale(1.1);
     background-color: gold;
 }
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+  }
 
 
 /* rainbow */
