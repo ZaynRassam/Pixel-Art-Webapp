@@ -45,6 +45,7 @@ body {
     margin-bottom: 100px;
     /* height:100%; */
     align-self: stretch;
+    margin-right:160px;
   }
 
 .input {
@@ -65,13 +66,22 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* .colour-wheel {
+.colour-wheel {
     width: 70px;
     height: 70px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-  } */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+.colour-wheel::-webkit-color-swatch {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+
+}
 
 .rainbow-button, .eraser, .clear {
     width: 100%;
@@ -103,7 +113,17 @@ background-color: gold;
     background-color: gold;
 }
 
+.slider {
+    margin-top: 15px;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    height:9px;
+}
 
+.grid-size {
+    font-size: larger;
+    font-weight: bold;
+}
 
 .footer {
     position: absolute;
@@ -117,6 +137,7 @@ background-color: gold;
     padding: 10px;
     font-size: 20px;
   }
+
 
 
 /* rainbow */
